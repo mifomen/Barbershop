@@ -1,0 +1,7 @@
+*.zip
+*.psd
+*.jpg
+node_modules
+layout
+build
+barbershop*.jpg
