@@ -5,23 +5,86 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Barbershop</title>
-
+  <link rel="preload" href="fonts/pt-sans-narrow.woff" as="font">
 <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  
-<nav>
- <ul>
-  <li><a>zxc</a></li>
-  <li><a>zxc</a></li>
-  <li><a>zxc</a></li>
-  <li><a>zxc</a></li>
-  <li><a>zxc</a></li>
-  <li><a>zxc</a></li>
+ <div class="logo">
+  <img class="logo__img" src="img/logotype.png">
+ </div> 
+<nav class="menu-nav menu-nav--opened menu-nav--nojs">
+   <button type="button" class="menu-nav__toggle">открыть меню</button>
+ <ul class="menu-nav__list">
+  <li class="menu-nav__item menu-nav__item--active"><a href="#" class="menu-nav__link">ГЛАВНАЯ</a></li>
+  <li class="menu-nav__item"><a href="#" class="menu-nav__link">НАШИ РАБОТЫ</a></li>
+  <li class="menu-nav__item"><a href="#" class="menu-nav__link">ЗАПИСАТЬСЯ</a></li>
+  <li class="menu-nav__item"><a href="#" class="menu-nav__link">КОНТАКТЫ</a></li>
+  <li class="menu-nav__item"><a href="#" class="menu-nav__link">HTML ACADEMY</a></li>
+  <li class="menu-nav__item color-toggle"><a href="#" class="menu-nav__link"><img class="menu-nav__item--img" src="img/login.png">Вход</a></li>
  </ul>
-</nav> 
+</nav>
+<div class="statistics">
+<span class="statistics__title">
+ Стрижка у нас<br>
+это выгодно!
+</span>
+<span class="statistics__sub-title">
+Мужская стрижка требует точного<br>
+ подхода. Обратимся к статистике:
+</span>
+<ul class="features">
+ <li class="features__item color-item-one">
+  <span class="features__price">1 500 *</span>
+  <span class="features__can-do">рублей<br>
+вложений</span>
+ </li>
+ <li class="features__item color-item-two">
+  <span class="features__price ">7 200</span>
+  <span class="features__can-do">секунд<br>
+времени мастера</span>
+ </li>
+ <li class="features__item color-item-three">
+  <span class="features__price">90 000</span>
+  <span class="features__can-do">постриженных<br>
+волос</span>
+ </li>
+ <li class="features__item color-item-one">
+  <span class="features__price">500 000 *</span>
+  <span class="features__can-do">лайков и<br>
+комплиментов</span>
+ </li>
+<li class="features__item last-row">* — приведённые данные ложь</li>
+</ul>
+</div>
+<div class="advantages">
+ <div class="advantages__slider">
+  <div class="advantages__slider-inner">
+   <div class="advantages__slider-controls">
+    <button id="btn1" class="advantages__slider-button" type="button"></button>
+    <button id="btn2" class="advantages__slider-button" type="button"></button>
+    <button id="btn3" class="advantages__slider-button" type="button"></button>
 
-
-
+    <label></label>
+   </div>
+ <div class="advantages__item">
+  <img src="img/advantage-1.png" alt="" class="advantages__img">
+  <span class="advantages__item-title">БЫСТРО</span>
+  <span class="advantages__item-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</span>
+ </div>
+ <div class="advantages__item">
+  <img src="img/advantage-2.png" alt="" class="advantages__img">
+  <span class="advantages__item-title">КРУТО</span>
+  <span class="advantages__item-description">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. 
+Во всяком случае внешне.
+</span>
+ </div>
+ <div class="advantages__item">
+  <img src="img/advantage-3.png" alt="" class="advantages__img">
+  <span class="advantages__item-title">ДОРОГО</span>
+  <span class="advantages__item-description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</span>
+ </div>
+  </div>
+ </div>
+</div>
 <script src="js/min.js"></script>
 </body>

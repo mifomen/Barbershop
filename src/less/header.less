@@ -1,0 +1,159 @@
+.logo {
+	min-height: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(36, 36, 36,1);
+	&__img {
+	padding-left: 5px;
+	}
+	@media @mobile {
+		width: 320px;
+		margin: auto;
+	}
+}
+
+.menu-nav {
+
+	
+	@media @mobile {
+	width: 320px;	
+	}
+	margin: 0 auto;
+	position: relative;
+	&__toggle {
+	position: absolute;
+	right: 0;
+	top:0;
+	font-size: 0;
+	height: 50px;
+	width: 70px;	
+	background-color: rgba(106, 77, 56,1);
+	border: 0;
+	&:hover {
+		background-color: rgb(98, 69, 48);
+	}
+	&:active {
+	
+	}
+	&::before {
+		content: "";
+		position:absolute;
+		top: 24px;
+		left: 17px;
+		width: 36px;
+		z-index: 3;
+		height:2px;
+		background-color: #fff;
+		box-shadow: 0 -10px 0 0 #fff,
+					0 9px 0 0 #fff;
+	}
+	}
+	&__list {
+		list-style: none;
+		padding:0;
+		background-color: rgba(130, 101, 80,1);
+	margin:0;
+
+	}
+	&__item {
+		height: 50px;
+		border-bottom: 1px solid rgba(0,0,0,0);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+				&:hover {
+			background-color: rgb(117, 90, 70);
+		}
+		&--img {
+			padding-bottom: 4px;
+			padding-right: 5px;
+		}
+
+	}
+	&__link {
+
+		font-size: 18px;
+		font-weight: bold;
+		color: #FFF;
+		&:hover,
+		&:active {
+			color: #FFF;
+			text-decoration: none;
+		}
+	}
+}
+.menu-nav--opened .menu-nav__item {
+border-bottom: 1px solid rgb(113, 84, 63);
+height: 50px;
+justify-content: flex-start;
+}
+.menu-nav--opened .menu-nav__list {
+	margin-left: 70px;
+	display: block;
+
+}
+.menu-nav--opened .menu-nav__item{
+	padding-left: 21px;
+}
+
+.menu-nav--opened .menu-nav__toggle{
+	left:0;
+}
+
+.menu-nav--closed .menu-nav__item {
+ display: none;
+&--active {
+ display: flex;
+}
+a {
+justify-content: center;
+}
+}
+.menu-nav--nojs .menu-nav__toggle {
+  display: block;
+}
+
+.menu-nav--opened .menu-nav__toggle{
+
+
+ &::before,
+ &::after {
+  content: "";
+  position:absolute;
+  top: 24px;
+  left: 17px;
+  width: 36px;
+  height: 3px;
+  background-color: #fff;
+ }
+&::before {
+ transform: rotate(45deg);
+background-color: #fff;
+ box-shadow: none;
+}
+&::after {
+ transform: rotate(-45deg);
+ box-shadow: none;
+
+}
+&:active::before,
+&:active::after {
+background-color: rgb(145, 125, 111);
+}
+}
+.menu-nav--closed .menu-nav__toggle:active::before {
+	background-color: rgba(255,255,255,0.5);
+	box-shadow: 0 -10px 0 0 rgba(255,255,255,0.5),
+				0 9px 0 0 rgba(255,255,255,0.5);
+
+}
+
+.color-toggle {
+	background-color: rgb(106, 77, 56);
+		&:hover {
+		background-color: rgb(98, 69, 48);
+	}
+}
+
+
