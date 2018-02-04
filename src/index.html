@@ -12,7 +12,7 @@
  <div class="logo">
   <img class="logo__img" src="img/logotype.png">
  </div> 
-<nav class="menu-nav menu-nav--opened menu-nav--nojs">
+<nav class="menu-nav menu-nav--closed menu-nav--nojs">
    <button type="button" class="menu-nav__toggle">открыть меню</button>
  <ul class="menu-nav__list">
   <li class="menu-nav__item menu-nav__item--active"><a href="#" class="menu-nav__link">ГЛАВНАЯ</a></li>
@@ -58,33 +58,37 @@
 </div>
 <div class="advantages">
  <div class="advantages__slider">
+  <input id="btn-1" name="toggle" checked="" type="radio">
+  <input id="btn-2" name="toggle" type="radio">
+  <input id="btn-3" name="toggle" type="radio">
+<div class="advantages__slider-controls">
+  <label class="advantages__slider-label" for="btn-1"></label>
+  <label class="advantages__slider-label" for="btn-2"></label>
+  <label class="advantages__slider-label" for="btn-3"></label>
+</div>
   <div class="advantages__slider-inner">
-   <div class="advantages__slider-controls">
-    <button id="btn1" class="advantages__slider-button" type="button"></button>
-    <button id="btn2" class="advantages__slider-button" type="button"></button>
-    <button id="btn3" class="advantages__slider-button" type="button"></button>
-
-    <label></label>
-   </div>
- <div class="advantages__item">
-  <img src="img/advantage-1.png" alt="" class="advantages__img">
-  <span class="advantages__item-title">БЫСТРО</span>
-  <span class="advantages__item-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</span>
+  <div class="advantages__slider-slides">
+  <div class="advantages__item">
+  <img src="img/advantage-1.png" alt="" class="advantages__item-img"><br>
+  <span class="advantages__item-title">БЫСТРО</span><br>
+  <span class="advantages__item-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</span><br>
  </div>
  <div class="advantages__item">
-  <img src="img/advantage-2.png" alt="" class="advantages__img">
-  <span class="advantages__item-title">КРУТО</span>
+  <img src="img/advantage-2.png" alt="" class="advantages__item-img"><br>
+  <span class="advantages__item-title">КРУТО</span><br>
   <span class="advantages__item-description">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. 
 Во всяком случае внешне.
 </span>
  </div>
  <div class="advantages__item">
-  <img src="img/advantage-3.png" alt="" class="advantages__img">
-  <span class="advantages__item-title">ДОРОГО</span>
+  <img src="img/advantage-3.png" alt="" class="advantages__item-img"><br>
+  <span class="advantages__item-title">ДОРОГО</span><br>
   <span class="advantages__item-description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</span>
  </div>
+
+   </div>
   </div>
  </div>
-</div>
+ </div>
 <script src="js/min.js"></script>
 </body>
