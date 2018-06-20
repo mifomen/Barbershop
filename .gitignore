@@ -5,3 +5,13 @@ node_modules
 layout
 build
 barbershop*.jpg
+build/
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+Thumbs.db
