@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //npm install npm install gulp npm start
 "use strict";
 var gulp = require('gulp');
@@ -158,3 +159,6 @@ gulp.watch("src/**/*.html", ["build"]).on("change", browserSync.reload);
 //gulp.watch("src/less/**/*.less", ["style"]);
 //gulp.watch("src/js/**/*.js", ["minjs"]);
 //gulp.watch("src/*.html", ["html"]).on("change", server.reload);
+=======
+require('require-dir')('./gulp', {recurse: true})
+>>>>>>> 6bd25b8440f80d7e7176af85fbfd864e62f0efb4

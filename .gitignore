@@ -5,4 +5,18 @@ node_modules
 layout
 build
 barbershop*.jpg
+<<<<<<< HEAD
+package-lock.json
+=======
+build/
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+Thumbs.db
+>>>>>>> 6bd25b8440f80d7e7176af85fbfd864e62f0efb4
 package-lock.json
