@@ -5,3 +5,4 @@ node_modules
 layout
 build
 barbershop*.jpg
+package-lock.json

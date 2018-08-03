@@ -67,7 +67,7 @@ gulp.task('less', function() {
 });
 
 gulp.task("minjs", function() { //минификация js и перенос в папку билд
-  gulp.src("src/js/*.js")
+  gulp.src("src/**/*.js")
     .pipe(uglify())
     .pipe(rename('min.js'))
     .pipe(gulp.dest("build/js"));
@@ -141,10 +141,9 @@ gulp.task("serve", function() {
   //gulp.watch("src/**/*.less", ["build"]);
  //gulp.watch("src/**/*.js", ["build"]);
   //gulp.watch("src/**/*.html", ["build"]);
-
+gulp.watch("src/**/*.less", ["build"]).on("change", browserSync.reload);
+gulp.watch("src/**/*.html", ["build"]).on("change", browserSync.reload);
  gulp.watch("src/**/*.js", ["build"]).on("change", browserSync.reload);
-  gulp.watch("src/*.html", ["build"]).on("change", browserSync.reload);
-  gulp.watch("src/**/*.less", ["build"]).on('change', browserSync.reload);
 });
 
 //оригинальная фукнции для выставвления итогового файла
